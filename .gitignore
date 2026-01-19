@@ -1,0 +1,32 @@
+# ========================
+# Backend (Spring Boot)
+# ========================
+backend/**/target/
+backend/**/.classpath
+backend/**/.project
+backend/**/.settings/
+
+# ========================
+# Frontend (React)
+# ========================
+frontend/**/node_modules/
+frontend/**/dist/
+frontend/**/.vite/
+
+# ========================
+# Environment files
+# ========================
+.env
+.env.local
+
+# ========================
+# IDE / Editor files
+# ========================
+.idea/
+.vscode/
+
+# ========================
+# OS generated files
+# ========================
+.DS_Store
+Thumbs.db
