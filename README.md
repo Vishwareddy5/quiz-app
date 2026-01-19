@@ -1,7 +1,7 @@
 # 🧠 Full-Stack Quiz Application
 
 A production-ready **full-stack Quiz Application** built using **Spring Boot**, **React**, and **PostgreSQL**.  
-Users can dynamically generate quizzes by category, answer questions one at a time, and receive accurate scores based on validated responses.
+Users can dynamically generate quizzes by category (java and python), answer questions one at a time, and receive accurate scores based on validated responses.
 
 This project prioritizes **clean architecture**, **concept-based learning**, and **end-to-end correctness** over UI gimmicks.
 
@@ -20,22 +20,24 @@ This project prioritizes **clean architecture**, **concept-based learning**, and
 
 ---
 
-
 ## 📸 Application Screenshots
 
 ### 🏠 Home – Start Quiz
+
 ![Home Page](screenshots/home.png)
 
 ### ❓ Quiz – Answer Questions
+
 ![Quiz Page](screenshots/quiz.png)
 
 ### 🏁 Result – Final Score
-![Result Page](screenshots/result.png)
 
+![Result Page](screenshots/result.png)
 
 ## 🏗️ Tech Stack
 
 ### Backend
+
 - Java 17
 - Spring Boot
 - Spring Data JPA
@@ -43,6 +45,7 @@ This project prioritizes **clean architecture**, **concept-based learning**, and
 - Maven
 
 ### Frontend
+
 - React (Vite)
 - React Router DOM
 - Axios
@@ -51,6 +54,7 @@ This project prioritizes **clean architecture**, **concept-based learning**, and
 ---
 
 ## 📂 Project Structure
+
 ```
 quiz-app/
 ├── backend/
