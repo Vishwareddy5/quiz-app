@@ -20,6 +20,19 @@ This project prioritizes **clean architecture**, **concept-based learning**, and
 
 ---
 
+
+## 📸 Application Screenshots
+
+### 🏠 Home – Start Quiz
+![Home Page](screenshots/home.png)
+
+### ❓ Quiz – Answer Questions
+![Quiz Page](screenshots/quiz.png)
+
+### 🏁 Result – Final Score
+![Result Page](screenshots/result.png)
+
+
 ## 🏗️ Tech Stack
 
 ### Backend
