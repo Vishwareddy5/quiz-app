@@ -51,4 +51,28 @@ This project prioritizes **clean architecture**, **concept-based learning**, and
 ---
 
 ## 📂 Project Structure
-
+```
+quiz-app/
+├── backend/
+│ └── quiz-app-spring-boot/
+│ ├── src/main/java/com/telusko/quizApp
+│ │ ├── Controller
+│ │ ├── Service
+│ │ ├── dao
+│ │ ├── model
+│ │ └── config
+│ └── src/main/resources
+│ └── application.properties
+├── frontend/
+│ └── quiz-app-react/
+│ ├── src
+│ │ ├── pages
+│ │ ├── api
+│ │ └── assets
+│ └── vite.config.js
+├── screenshots/
+│ ├── home.png
+│ ├── quiz.png
+│ └── result.png
+└── README.md
+```
