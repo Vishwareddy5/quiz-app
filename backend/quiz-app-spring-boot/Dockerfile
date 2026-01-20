@@ -24,4 +24,5 @@ RUN ./mvnw clean package -DskipTests
 EXPOSE 8090
 
 # Run the application
-CMD ["java", "-jar", "target/quiz-app-spring-boot-0.0.1-SNAPSHOT.jar"]
+CMD ["sh", "-c", "java -jar target/*.jar"]
+
