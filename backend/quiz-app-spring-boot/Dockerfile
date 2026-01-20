@@ -1,5 +1,6 @@
 # Use official OpenJDK image
-FROM eclipse-temurin:21-jdk
+FROM eclipse-temurin:17-jdk
+
 
 
 # Set working directory
