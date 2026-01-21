@@ -8,8 +8,13 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface QuestionDao extends JpaRepository<Question,Integer> {
+public interface QuestionDao extends JpaRepository<Question, Integer> {
     List<Question> findByCategory(String category);
+
     @Query(value = "SELECT * FROM question q WHERE q.category = ?1 ORDER BY RANDOM() LIMIT ?2", nativeQuery = true)
     List<Question> findRandomQuestionByCategory(String category, int numQ);
+
+    @Query("SELECT DISTINCT q.category FROM Question q")
+    List<String> findDistinctCategories();
+
 }

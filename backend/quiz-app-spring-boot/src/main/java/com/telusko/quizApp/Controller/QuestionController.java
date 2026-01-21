@@ -15,30 +15,35 @@ public class QuestionController {
     QuestionService questionService;
 
     @GetMapping("allquestions")
-    public ResponseEntity<List<Question>> getAllQuestions(){
+    public ResponseEntity<List<Question>> getAllQuestions() {
         return questionService.getAllQuestions();
     }
 
     @GetMapping("category/{cat}")
-    public ResponseEntity<List<Question>> getCategoryQuestions(@PathVariable String cat){
+    public ResponseEntity<List<Question>> getCategoryQuestions(@PathVariable String cat) {
         String category_name = cat;
         return questionService.getCategoryQuestions(category_name);
     }
 
+    @GetMapping("categories")
+    public ResponseEntity<List<String>> getCategories() {
+        return questionService.getCategories();
+    }
+
     @PostMapping("add")
-    public ResponseEntity<String> addQuestion(@RequestBody Question question){
+    public ResponseEntity<String> addQuestion(@RequestBody Question question) {
         return questionService.addQuestion(question);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> deleteQuestionById(@PathVariable Integer id){
+    public ResponseEntity<String> deleteQuestionById(@PathVariable Integer id) {
         questionService.deleteQuestionById(id);
         return ResponseEntity.ok("Question deleted successfully");
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<String> updateQuestionById(@PathVariable Integer id,@RequestBody Question question){
-        questionService.updateQuestionById(id,question);
+    public ResponseEntity<String> updateQuestionById(@PathVariable Integer id, @RequestBody Question question) {
+        questionService.updateQuestionById(id, question);
         return ResponseEntity.ok("Question update successfully");
     }
 }
