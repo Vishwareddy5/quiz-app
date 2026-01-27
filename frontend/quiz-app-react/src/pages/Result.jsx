@@ -14,6 +14,13 @@ function Result() {
       <h3>
         Score: {score} / {total}
       </h3>
+      <p>
+        {score === total
+          ? "Excellent! 🎉"
+          : score >= total / 2
+            ? "Good job "
+            : "Keep practicing "}
+      </p>
     </div>
   );
 }

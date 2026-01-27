@@ -75,6 +75,9 @@ function Quiz() {
   }
 
   const isAnswered = selectedAnswers[currentQuestion.id] !== undefined;
+console.log(prepareSubmission());
+
+  
 
   return (
     <div className="card">
@@ -87,8 +90,8 @@ function Quiz() {
           <input
             type="radio"
             name="option"
-            checked={selectedAnswers[currentQuestion.id] === "option1"}
-            onChange={() => handleOptionChange(currentQuestion.id, "option1")}
+            checked={selectedAnswers[currentQuestion.id] === currentQuestion.option1}
+            onChange={() => handleOptionChange(currentQuestion.id, currentQuestion.option1)}
           />{" "}
           {currentQuestion.option1}
         </label>
@@ -99,8 +102,8 @@ function Quiz() {
           <input
             type="radio"
             name="option"
-            checked={selectedAnswers[currentQuestion.id] === "option2"}
-            onChange={() => handleOptionChange(currentQuestion.id, "option2")}
+            checked={selectedAnswers[currentQuestion.id] === currentQuestion.option2}
+            onChange={() => handleOptionChange(currentQuestion.id, currentQuestion.option2)}
           />{" "}
           {currentQuestion.option2}
         </label>
@@ -111,8 +114,8 @@ function Quiz() {
           <input
             type="radio"
             name="option"
-            checked={selectedAnswers[currentQuestion.id] === "option3"}
-            onChange={() => handleOptionChange(currentQuestion.id, "option3")}
+            checked={selectedAnswers[currentQuestion.id] === currentQuestion.option3}
+            onChange={() => handleOptionChange(currentQuestion.id, currentQuestion.option3)}
           />{" "}
           {currentQuestion.option3}
         </label>
@@ -123,8 +126,8 @@ function Quiz() {
           <input
             type="radio"
             name="option"
-            checked={selectedAnswers[currentQuestion.id] === "option4"}
-            onChange={() => handleOptionChange(currentQuestion.id, "option4")}
+            checked={selectedAnswers[currentQuestion.id] === currentQuestion.option4}
+            onChange={() => handleOptionChange(currentQuestion.id, currentQuestion.option4)}
           />{" "}
           {currentQuestion.option4}
         </label>

@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_BASE_URL = "http://localhost:8090";
+const API_BASE_URL = "https://quiz-backend-86af.onrender.com";
 
 export const createQuiz = (category, numQ, title) => {
   return axios.post(`${API_BASE_URL}/quiz/create`, null, {
@@ -20,4 +20,8 @@ export const submitQuiz = (quizId, answers) => {
     `${API_BASE_URL}/quiz/submit/${quizId}`,
     answers
   );
+};
+
+export const getCategories = () => {
+  return axios.get(`${API_BASE_URL}/question/categories`);
 };
